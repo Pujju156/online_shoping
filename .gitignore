@@ -1,32 +1,160 @@
-# Prerequisites
-*.d
+#include<iostream>
+#include<string.h>
+using namespace std;
+class regchek
+{
+    string pass;
+    string ps;
+    string usname;
+    string nm;
+    public:
+    void getdata()
+    {
+        cout<<"create your username"<<endl;
+        cin>>usname;
+        cout<<"create your password"<<endl;
+        cin>>pass;
+        cout<<"registration Succesfull To More Beeter Exprience login"<<endl;
+        cout<<"enter your username"<<endl;
+        cin>>nm;
+        if(nm==usname)
+        {
+            cout<<"enter your password"<<endl;
+            cin>>ps;
+            if(ps==pass)
+            {
+                cout<<"Welcome P-kart"<<endl;
+            }
+            else
+            {
+                cout<<"your password does not match"<<endl;
+            }
+            
+        }
+        else
+        {
+        	cout<<"sry u r user nmae worng"<<endl;
+		}
+    }
+};
+class shoping
+   {
+   	int choice;
+   	public:
+		void prodata()
+		{
+			cout<<"what you look in our p kart"<<endl;
+			cout<<"1.kids wear"<<endl;
+			cout<<"2.mans wear"<<endl;
+			cout<<"3.exit"<<endl;	
+			cout<<"select u r choice"<<endl;
+			cin>>choice;
+		}
+		void disply()
+		{
+			switch (choice)
+			{
+				case 1: 
+				cout<<"---------------------"<<endl;
+				cout<<"1.watch__(299 $)"<<endl;
+				cout<<"2.bat__(356 $)"<<endl;
+				cout<<"3.hp leptop(45000)"<<endl;
+				cout<<"prees product no to buy"<<endl;
+				cin>>choice;
+				{
+					int C;
+					int y ;
+					switch(choice)
+					case 1:
+						cout<<"man branded watch"<<endl;
+						cout<<"made in india"<<endl;
+						cout<<"final price = 299"<<endl;
+						cout<<"if u agree press 5"<<endl;
+						cin>>choice;
+						break;
+						case 5:
+						
+							
+							
+		
+							{
+								cout<<"your bill is Smart Watch here"<<
+								cout<<"product name smart watch"<<endl;
+								cout<<"------------------------------"<<endl;
+								cout<<"total payeable amount is 299"<<endl;
+								cout<<"thanks for using p -kart"<<endl;
+							}
+							break;
+							
+							
+							
+							
+						
+						}
+			    }
+		   
+						
+						
+				
+				
+				switch(choice)
+				{
+				
+				case 2:
+					
+				cout<<"---------------------"<<endl;
+				cout<<"1.jeans pent__(199)"<<endl;
+				cout<<"t-shitre(180)"<<endl;
+				cout<<"3.mouse"<<endl;
+				cout<<"prees product no to buy"<<endl;
+				cin>>choice;
+				
+				{
+					switch(choice)
+					case 1:
+						cout<<"jeans pent corton"<<endl;
+						cout<<"made in india"<<endl;
+						cout<<"final price = 199"<<endl;
+						cout<<"if u agree press 8"<<endl;
+						cin>>choice;
+						case 8:
+							
+							{
+								cout<<"your bill is jeans corrton here"<<
+								cout<<"product name jeans corrton"<<endl;
+								cout<<"------------------------------"<<endl;
+								cout<<"total payeable amount is 199"<<endl;
+								cout<<"thanks for using p -kart"<<endl;
+							}
+				}
+				}
+				switch(choice)
+				{
+				
+				case 10:
+				default :
+					cout<<"not select"<<endl;
+					break;
+				}
+		}
+	};
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main()
+{
+	int c;
+	cout<<"--------------------------"<<endl;
+	cout<<"welcome your cart p kart"<<endl;
+	cout<<"--------------------------"<<endl;
+	regchek re;
+	re.getdata();
+	cout<<"do u want shpoing press 1"<<endl;
+	cin>>c;
 
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+	switch(c)
+	{
+	case 1:
+	shoping sh;
+	sh.prodata();
+	sh.disply();
+	}
+}
